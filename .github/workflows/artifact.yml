@@ -16,6 +16,7 @@ jobs:
           whoami >> output/artifact.txt
           ls -l output/  # Debugging: List contents
           cat output/artifact.txt  # Debugging: Show file content
+          sleep 5
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
